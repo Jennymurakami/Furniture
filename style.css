@@ -1,0 +1,259 @@
+.product {
+  background-color: #ffe0c3;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product img {
+  margin: 0 30px;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  width: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .product img {
+    width: 20%;
+  }
+}
+
+.product img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.product_pic {
+  margin-top: 40px !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .product_pic {
+    display: block;
+  }
+}
+
+.product_pic .product_pic_left {
+  background-color: #ffe0c3;
+  padding: 15px 0 0 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .product_pic .product_pic_left {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product_pic .product_pic_left {
+    height: 100%;
+  }
+}
+
+.product_pic .product_pic_left .product_text-l {
+  font-size: 30px;
+}
+
+.product_pic .product_pic_left .product_text-l2 {
+  font-size: 25px;
+}
+
+.product_pic .product_pic_left .left_pic img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .product_pic .product_pic_left .left_pic img {
+    width: 90%;
+  }
+}
+
+.product_pic .product_pic_text {
+  text-align: center;
+  margin: auto;
+  border: 4px solid #ff7b54;
+  padding: 40px 5px;
+}
+
+.product_pic .product_pic_text .product_title {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.product_pic .product_pic_text .product_text {
+  font-size: 20px;
+}
+
+.product_pic .product_pic_right {
+  background-color: #ffe0c3;
+  padding: 15px 0 0 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .product_pic .product_pic_right {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product_pic .product_pic_right {
+    height: 100%;
+  }
+}
+
+.product_pic .product_pic_right .product_text-l {
+  font-size: 30px;
+}
+
+.product_pic .product_pic_right .product_text-r2 {
+  font-size: 20px;
+}
+
+.product_pic .product_pic_right .right_pic img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .product_pic .product_pic_right .right_pic img {
+    width: 90%;
+  }
+}
+
+.newin_title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px !important;
+}
+
+.newin_title .newin_arrow {
+  text-align: right;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_size {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_size {
+    width: 100%;
+  }
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 10px 0;
+}
+
+nav .navicon {
+  text-align: right;
+}
+
+nav .navicon img {
+  margin: 0 5px;
+}
+
+.exhibit {
+  position: relative;
+}
+
+.exhibit .original {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.exhibit .pointer {
+  position: absolute;
+  top: 56%;
+  left: 24%;
+  cursor: pointer;
+}
+
+.exhibit .pointer:hover .product_data {
+  display: block;
+}
+
+.exhibit .pointer:hover .dot1 {
+  width: 25%;
+}
+
+.exhibit .pointer .dot1 {
+  width: 100%;
+}
+
+.exhibit .pointer2 {
+  position: absolute;
+  top: 31%;
+  left: 48%;
+  cursor: pointer;
+}
+
+.exhibit .pointer2:hover .product_data {
+  display: block;
+}
+
+.exhibit .pointer2:hover .dot2 {
+  width: 25%;
+}
+
+.exhibit .pointer2 .dot1 {
+  width: 100%;
+}
+
+.exhibit .pointer3 {
+  position: absolute;
+  top: 55%;
+  left: 82%;
+  cursor: pointer;
+}
+
+.exhibit .pointer3:hover .product_data {
+  display: block;
+}
+
+.exhibit .pointer3:hover .dot3 {
+  width: 25%;
+}
+
+.exhibit .pointer3 .dot1 {
+  width: 100%;
+}
+
+.exhibit .product_data {
+  display: none;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */

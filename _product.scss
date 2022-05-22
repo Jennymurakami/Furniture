@@ -1,0 +1,19 @@
+.product {
+    background-color: #ffe0c3;
+    text-align: center;
+    padding: 20px;
+    margin-top:20px;
+    img {
+        margin: 0 30px;
+        transition: 0.5;
+        width:50px;
+        @media screen and(max-width:500px) {
+            width: 20%;
+            
+        }
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+}

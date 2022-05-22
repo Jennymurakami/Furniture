@@ -1,0 +1,10 @@
+.newin_title{
+    display:grid;
+grid-template-columns: repeat(2,1fr);
+margin-top: 20px !important;
+.newin_arrow{
+    
+    text-align: right;
+    cursor: pointer;
+}
+}
